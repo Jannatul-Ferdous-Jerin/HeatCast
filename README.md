@@ -1,25 +1,25 @@
 # HeatCast
 
-HeatCast is a heat-alert forecasting project that predicts future temperature conditions from historical meteorological time-series data. The project uses a cross-modality forecasting pipeline that combines numerical time-series patterns with prompt-based language model embeddings to support heat event prediction.
+HeatCast predicts future temperature conditions for heat-alert forecasting using historical meteorological time-series data. The project combines numerical time-series modeling with prompt-based language model embeddings to capture weather patterns that are useful for heat event prediction.
 
-The main workflow is provided in `HeatAlert.ipynb`. Supporting Python modules handle dataset loading, prompt-embedding generation, model training, evaluation, and attention visualization.
+The main workflow is provided in `HeatAlert.ipynb`. Supporting Python modules handle data loading, prompt-embedding generation, model training, evaluation, and attention visualization.
 
 ## Repository Structure
 
 ```text
 .
-├── HeatAlert.ipynb          # Main project notebook
-├── train.py                 # Model training and evaluation entry point
-├── visualize_attention.py   # Attention visualization utility
-├── data_provider/           # Dataset loaders
-├── layers/                  # Neural network layers
-├── models/                  # HeatCast/TimeCMA model implementation
-├── scripts/                 # Shell scripts for embedding storage and training
-├── storage/                 # Prompt-embedding generation and storage utilities
-├── utils/                   # Metrics, masking, time features, and training helpers
-├── dataset/                 # Input dataset files
-├── env_windows.yaml         # Conda environment for Windows
-└── env_ubuntu.yaml          # Conda environment for Ubuntu/Linux
+|-- HeatAlert.ipynb          # Main project notebook
+|-- train.py                 # Model training and evaluation entry point
+|-- visualize_attention.py   # Attention visualization utility
+|-- data_provider/           # Dataset loaders
+|-- dataset/                 # Place local input datasets here
+|-- layers/                  # Neural network layers
+|-- models/                  # HeatCast/TimeCMA model implementation
+|-- scripts/                 # Shell scripts for embedding storage and training
+|-- storage/                 # Prompt-embedding generation and storage utilities
+|-- utils/                   # Metrics, masking, time features, and training helpers
+|-- env_windows.yaml         # Conda environment for Windows
+`-- env_ubuntu.yaml          # Conda environment for Ubuntu/Linux
 ```
 
 ## Setup
@@ -45,6 +45,8 @@ conda activate TimeCMA
 ## Usage
 
 The main workflow is documented in `HeatAlert.ipynb`.
+
+Place the required dataset file in `dataset/` before running the notebook or training scripts.
 
 To run the training script directly:
 

@@ -8,6 +8,10 @@ Results/
 logs/
 graphs/
 
+# Local datasets
+dataset/*.csv
+!dataset/.gitkeep
+
 # Generated prediction/result CSV files
 all_predicted_temperatures_last.csv
 comparison_predicted_vs_actual.csv
