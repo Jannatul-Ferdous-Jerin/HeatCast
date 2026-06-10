@@ -2,13 +2,13 @@
 
 HeatCast predicts future temperature conditions for heat-alert forecasting using historical meteorological time-series data. The project combines numerical time-series modeling with prompt-based language model embeddings to capture weather patterns that are useful for heat event prediction.
 
-The main workflow is provided in `HeatAlert.ipynb`. Supporting Python modules handle data loading, prompt-embedding generation, model training, evaluation, and attention visualization.
+The main workflow is provided in `HeatCast.ipynb`. Supporting Python modules handle data loading, prompt-embedding generation, model training, evaluation, and attention visualization.
 
 ## Repository Structure
 
 ```text
 .
-|-- HeatAlert.ipynb          # Main project notebook
+|-- HeatCast.ipynb           # Main project notebook
 |-- train.py                 # Model training and evaluation entry point
 |-- visualize_attention.py   # Attention visualization utility
 |-- data_provider/           # Dataset loaders
@@ -44,7 +44,7 @@ conda activate TimeCMA
 
 ## Usage
 
-The main workflow is documented in `HeatAlert.ipynb`.
+The main workflow is documented in `HeatCast.ipynb`.
 
 Place the required dataset file in `dataset/` before running the notebook or training scripts.
 
