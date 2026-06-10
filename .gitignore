@@ -1,0 +1,45 @@
+# Manuscript and paper files
+HeatCast_Elsevier.pdf
+*.pdf
+
+# Generated embeddings, outputs, logs, and figures
+Embeddings/
+Results/
+logs/
+graphs/
+
+# Generated prediction/result CSV files
+all_predicted_temperatures_last.csv
+comparison_predicted_vs_actual.csv
+predicted_and_actual.csv
+predicted_temperature_with_dates.csv
+*_predicted*.csv
+*prediction*.csv
+
+# Local scratch notes
+fix.txt
+.codex_upload_github.ps1
+
+# Model checkpoints and serialized artifacts
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.pkl
+*.pickle
+
+# Python and notebook caches
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Environment and editor files
+.env
+.venv/
+venv/
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
