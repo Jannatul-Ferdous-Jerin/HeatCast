@@ -1,8 +1,8 @@
 # HeatCast
 
-HeatCast is a heat-alert forecasting project based on a cross-modality time-series forecasting pipeline. The original project notebook is `HeatAlert.ipynb`; the Python modules and scripts in this repository support data loading, prompt-embedding storage, model training, evaluation, and attention visualization.
+HeatCast is a heat-alert forecasting project that predicts future temperature conditions from historical meteorological time-series data. The project uses a cross-modality forecasting pipeline that combines numerical time-series patterns with prompt-based language model embeddings to support heat event prediction.
 
-This repository is prepared for paper-submission code sharing. Generated outputs, trained checkpoints, embedding files, and the manuscript PDF are intentionally excluded from version control.
+The main workflow is provided in `HeatAlert.ipynb`. Supporting Python modules handle dataset loading, prompt-embedding generation, model training, evaluation, and attention visualization.
 
 ## Repository Structure
 
@@ -59,27 +59,3 @@ bash scripts/heat-wave.sh
 ```
 
 If prompt embeddings need to be regenerated, use the embedding storage utilities in `storage/` or the corresponding scripts in `scripts/`.
-
-## Data and Artifacts
-
-Tracked:
-
-- Source code and utility scripts
-- Environment files
-- Main notebook
-- Dataset files required to reproduce the workflow
-
-Ignored:
-
-- `HeatCast_Elsevier.pdf`
-- `Embeddings/`
-- `Results/`
-- `logs/`
-- `graphs/`
-- Generated prediction CSV files
-- Model checkpoints
-- Python cache and notebook checkpoint files
-
-## License
-
-See `LICENSE.txt`.
